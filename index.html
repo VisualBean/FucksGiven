@@ -1,1 +1,62 @@
-TEST
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv=Content-Type />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:url"                content="https://fucksgiven.xyz" />
+<meta property="og:type"               content="website" />
+<meta property="og:title"              content="Amount of fucks given." />
+<meta property="og:description"        content="Can you guess the amount of fucks that are given?" />
+<meta property="og:image"              content="https://i.imgur.com/c4uH5El.png" />
+<title>Amount of fucks given.</title>
+<link rel="manifest" href="/manifest.json">
+<style>
+    html {
+        background-color: #dfe6e9
+    }
+    .counter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 180px;
+        font-weight: 100;
+        color: #2d3436
+    }
+    .counter p {
+        font-size: 15px;
+        letter-spacing: 1em;
+        opacity: .5;
+        justify-content: center;
+        align-items: center;
+        padding-left: 1em;
+    }
+    .noselect {
+        -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none; /* Safari */
+        -khtml-user-select: none; /* Konqueror HTML */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+        user-select: none; /* Non-prefixed version, currently
+}
+</style>
+</head>
+<body>
+<div class="counter">   
+    <div id="count" data-duration="8000">
+        0
+    </div>
+    <p>
+        Fucks given.
+    </p>
+</div>
+<script src="scripts/jquery-2.2.4.min.js"></script>
+<script src="scripts/app.js"></script>
+<script>
+    if('serviceWorker' in navigator) {
+    navigator.serviceWorker
+            .register('sw.js', { scope: '/' })
+            .then(function() { console.log("Service Worker Registered"); });
+}
+</script>
+</body>
