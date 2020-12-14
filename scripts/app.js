@@ -6,6 +6,9 @@
             easing: 'easeInOutQuad',
             step: function (now) {
                 $(this).text(Math.ceil(now));
+            },
+            complete: function () {
+                $("html").addClass("hills-background");
             }
         });
     });
